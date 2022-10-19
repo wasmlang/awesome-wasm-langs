@@ -1,5 +1,7 @@
 # Awesome WebAssembly Languages !
 
+*This is a fork of appcypher's [awesome-wasm-langs](https://github.com/appcypher/awesome-wasm-langs).*
+
 WebAssembly, or wasm for short, is a low-level bytecode format that runs in the browser just like JavaScript.
 It is designed to be faster to parse than JavaScript, as well as faster to execute which makes it a suitable compilation target for new and existing languages.
 
