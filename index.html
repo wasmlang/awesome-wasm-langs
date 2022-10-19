@@ -1,0 +1,634 @@
+<h1 id="awesome-webassembly-languages-">Awesome WebAssembly Languages !</h1>
+<p>WebAssembly, or wasm for short, is a low-level bytecode format that runs in the browser just like JavaScript.
+It is designed to be faster to parse than JavaScript, as well as faster to execute which makes it a suitable compilation target for new and existing languages.</p>
+<ul>
+<li><a href="https://wasmlang.org">https://wasmlang.org</a></li>
+<li><a href="https://github.com/wasmlang/awesome-wasm-langs">https://github.com/wasmlang/awesome-wasm-langs</a></li>
+</ul>
+<p>This repo contains a list of languages that currently compile to or have their VMs in WebAssembly(wasm)  :octocat:</p>
+<h4 id="legend">Legend</h4>
+<p>:egg: - Work in progress.</br>
+:hatching_chick: - Unstable but usable.</br>
+:hatched_chick: - Stable for production usage.</br></p>
+<h2 id="contents">Contents</h2>
+<p>:hatched_chick: <a href="#dotnet">.Net</a></br>
+:hatched_chick: <a href="#assemblyscript">AssemblyScript</a></br>
+:egg: ~<a href="#astro">Astro</a>~ <code>Unmaintained</code></br>
+:egg: <a href="#ballerina">Ballerina</a></br>
+:hatched_chick: <a href="#brainfuck">Brainfuck</a></br>
+:hatched_chick: <a href="#c">C</a></br>
+:hatched_chick: <a href="#csharp">C#</a></br>
+:hatched_chick: <a href="#cpp">C++</a></br>
+:hatching_chick: <a href="#c4wa">C4wa</a></br>
+:hatched_chick: <a href="#clean">Clean</a></br>
+:egg: <a href="#co">Co</a></br>
+:hatched_chick: <a href="#cobol">COBOL</a></br>
+:egg: <a href="#crystal">Crystal</a></br>
+:hatching_chick: <a href="#d">D</a></br>
+:hatching_chick: <a href="#eel">Eel</a></br>
+:hatching_chick: <a href="#elixir">Elixir</a></br>
+:hatched_chick: <a href="#fsharp">F#</a></br>
+:egg: <a href="#faust">Faust</a></br>
+:egg: <a href="#forest">Forest</a></br>
+:hatched_chick: <a href="#forth">Forth</a></br>
+:hatched_chick: <a href="#go">Go</a></br>
+:egg: <a href="#grain">Grain</a></br>
+:egg: <a href="#haskell">Haskell</a></br>
+:hatching_chick: <a href="#java">Java</a></br>
+:hatching_chick: <a href="#javascript">JavaScript</a></br>
+:egg: <a href="#julia">Julia</a></br>
+:hatching_chick: ~<a href="#idris">Idris</a>~ <code>Unmaintained</code></br>
+:hatching_chick: <a href="#kotlin">Kotlin/Native</a></br>
+:egg: <a href="#kou">Kou</a></br>
+:hatching_chick: <a href="#lisp">Lisp</a></br>
+:hatched_chick: <a href="#lobster">Lobster</a></br>
+:hatched_chick: <a href="#lua">Lua</a></br>
+:hatching_chick: <a href="#lys">Lys</a></br>
+:hatched_chick: <a href="#never">Never</a></br>
+:egg: <a href="#nim">Nim</a></br>
+:egg: <a href="#ocaml">Ocaml</a></br>
+:hatching_chick: <a href="#pascal">Pascal</a></br>
+:hatching_chick: <a href="#perl">Perl</a></br>
+:hatching_chick: <a href="#php">PHP</a></br>
+:egg: <a href="#plorth">Plorth</a></br>
+:hatching_chick: <a href="#poetry">Poetry</a></br>
+:hatching_chick: <a href="#python">Python</a></br>
+:hatching_chick: <a href="#prolog">Prolog</a></br>
+:hatching_chick: <a href="#ruby">Ruby</a></br>
+:hatched_chick: <a href="#rust">Rust</a></br>
+:hatching_chick: <a href="#scheme">Scheme</a></br>
+:hatching_chick: <a href="#scopes">Scopes</a></br>
+:hatching_chick: ~<a href="#speedyjs">Speedy.js</a>~ <code>Unmaintained</code></br>
+:hatching_chick: <a href="#swift">Swift</a></br>
+:hatching_chick: ~<a href="#turboscript">Turboscript</a>~ <code>Unmaintained</code></br>
+:hatched_chick: <a href="#typescript">TypeScript</a></br>
+:egg: <a href="#wa">Wa</a></br>
+:hatched_chick: ~<a href="#wah">Wah</a>~ <code>Unmaintained</code></br>
+:hatching_chick: ~<a href="#walt">Walt</a>~ <code>Unmaintained</code></br>
+:hatching_chick: ~<a href="#wam">Wam</a>~ <code>Unmaintained</code></br>
+:egg: <a href="#wase">Wase</a></br>
+:hatched_chick: <a href="#webassembly">WebAssembly</a></br>
+:egg: ~<a href="#wracket">Wracket</a>~ <code>Unmaintained</code></br>
+:egg: <a href="#xcc">xcc</a></br>
+:hatched_chick: <a href="#zig">Zig</a></br></p>
+<hr>
+<h3 id="-a-name-dotnet-a-net-sup-top-contents-sup-"><a name="dotnet"></a>.Net <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>.NET Framework is a software framework developed by Microsoft that runs primarily on Microsoft Windows. It includes a large class library named Framework Class Library (FCL) and provides language interoperability (each language can use code written in other languages) across several programming languages.</p>
+<ul>
+<li><a href="https://github.com/mono/mono/tree/master/sdks/wasm">Mono</a> - an open source implementation of Microsoft&#39;s .NET Framework based on the ECMA standards for C# and the Common Language Runtime. For a real-work example, see this repository which contains the <a href="https://github.com/nventive/calculator">Windows 10 calculator</a>. The application is built using standard C++ 11 and C++/CX, with a calculation engine that dates back from 1995. Made by possible with mono via <a href="https://platform.uno/a-piece-of-windows-10-is-now-running-on-webassembly-natively-on-ios-and-android/">Uno Platform</a>.</li>
+<li><a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor">Blazor</a> - a web UI framework using C#/Razor and HTML, running client-side via WebAssembly. Source is maintained on <a href="https://github.com/dotnet/aspnetcore">ASP.Net Core</a> repo.</li>
+<li><a href="https://fsbolero.io/">Bolero</a> - Bolero brings Blazor to F# developers with an easy to use Model-View-Update architecture, HTML combinators, hot reloaded templates, type-safe endpoints, advanced routing and remoting capabilities, and more.</li>
+<li><a href="https://github.com/dotnet/runtimelab/tree/feature/NativeAOT-LLVM">NativeAOT-LLVM</a> - an experimental fork of the CoreCLR .NET runtime that compiles .NET applications into single-file executables, with the primary target being WASM</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-assemblyscript-a-assemblyscript-sup-top-contents-sup-"><a name="assemblyscript"></a>AssemblyScript <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>AssemblyScript is a new compiler targeting WebAssembly while utilizing TypeScript&#39;s syntax and node&#39;s vibrant ecosystem. Instead of requiring complex toolchains to set up, you can simply npm install it - or run it in a browser.</p>
+<ul>
+<li><a href="https://github.com/AssemblyScript/assemblyscript">AssemblyScript</a> - main repository.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-astro-a-astro-sup-top-contents-sup-"><a name="astro"></a>Astro <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Astro is a fun safe language for rapid prototyping and high performance applications.</p>
+<ul>
+<li>~<a href="https://github.com/astrolang/astro">Astro</a> - main repository.~ <code>Unmaintained</code></li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-ballerina-a-ballerina-sup-top-contents-sup-"><a name="ballerina"></a>Ballerina <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Ballerina is an open-source programming language for the cloud that makes it easier to use, combine, and create network services.
+The WebAssembly compiler is implemented for the native Ballerina compiler <a href="https://github.com/ballerina-platform/nballerina">nBallerina</a>.</p>
+<ul>
+<li><a href="https://github.com/ballerina-platform/nballerina/tree/wasm">Main repository</a> - Ballerina-to-wasm compiler </li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-brainfuck-a-brainfuck-sup-top-contents-sup-"><a name="brainfuck"></a>Brainfuck <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Brainfuck is an esoteric programming language created in 1993 by Urban Müller, and notable for its extreme minimalism.
+The language consists of only eight simple commands and an instruction pointer. While it is fully Turing-complete, it is not intended for practical use, but to challenge and amuse programmers.</p>
+<ul>
+<li><a href="https://github.com/serprex/brainwebfuckassembly">BrainfuckWebassembly</a> - a simple Brainfuck-to-wasm compiler in one function.</li>
+<li><a href="https://github.com/verdie-g/brainfuck2wasm">Brainfuck2Wasm</a> - a Brainfuck-to-wasm compiler and playground.</li>
+<li><a href="https://github.com/shritesh/brainfuck-rs-wasm">BrainfuckRsWasm</a> - a Brainfuck interpreter written in Rust and compiled to WebAssembly.</li>
+<li><a href="https://github.com/surma/bfwasm">bfwasm</a> - A non-optimizing Brainf_ck to WebAssembly compiler with WASI support.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-c-a-c-sup-top-contents-sup-"><a name="c"></a>C <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>C is a general-purpose, imperative computer programming language, supporting structured programming, lexical variable scope and recursion, while a static type system prevents many unintended operations.
+C was originally developed by Dennis Ritchie between 1969 and 1973 at Bell Labs,[6] and used to re-implement the Unix operating system.</p>
+<ul>
+<li><a href="https://github.com/kripken/emscripten">Emscripten</a> - an LLVM-to-JavaScript/Webassembly compiler. It takes LLVM bitcode - which can be generated from C/C++, using llvm-gcc (DragonEgg) or clang, or any other language that can be converted into LLVM - and compiles that into JavaScript or wasm.</li>
+<li><a href="https://github.com/leaningtech/cheerp-meta">Cheerp</a> - an open-source, commercial C/C++ compiler for Web applications. It can compile virtually any C/C++ code (up to C++14) to WebAssembly, JavaScript, asm.js or a combination thereof.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-csharp-a-c-sup-top-contents-sup-"><a name="csharp"></a>C# <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>C# is a multi-paradigm programming language encompassing strong typing, imperative, declarative, functional, generic, object-oriented (class-based), and component-oriented programming disciplines.
+Its development team is led by Anders Hejlsberg.
+WebAssembly support is achieved through <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor">Blazor</a>.</p>
+<ul>
+<li>See <a href="#dotnet">.Net</a></li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-cpp-a-c-sup-top-contents-sup-"><a name="cpp"></a>C++ <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>C++ is a general-purpose programming language. It has imperative, object-oriented and generic programming features, while also providing facilities for low-level memory manipulation.
+It was designed with a bias toward system programming and embedded, resource-constrained and large systems, with performance, efficiency and flexibility of use as its design highlights.
+The development of the language was started in 1979 by Bjarne Stroustrup as a &quot;C with Classes&quot;.</p>
+<ul>
+<li>See <a href="#c">C</a>.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-c4wa-a-c4wa-sup-top-contents-sup-"><a name="c4wa"></a>c4wa <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>C4wa (&quot;C for Web Assembly&quot;) is a subset of Standard C specifically targeted for simple and efficient Web Assembly compilation. 
+Generated WASM files include no overhead, out of the box compatible with any Web Assembly runtime, support import of variable-argument
+functions (such as <code>printf</code>). There is also an option to create well-formatted and readable WAT files.</p>
+<ul>
+<li><a href="https://github.com/kign/c4wa">c4wa</a> - main repository.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-clean-a-clean-sup-top-contents-sup-"><a name="clean"></a>Clean <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Clean is a general purpose, state-of-the-art, pure and lazy functional programming language designed for making real-world applications.
+Some of its most notable language features are uniqueness typing, dynamic typing, and generic functions.</p>
+<ul>
+<li><a href="https://gitlab.com/clean-and-itasks/abc-interpreter">ABC interpreter</a> - interpreter for Clean&#39;s intermediate language ABC, with a WebAssembly version.</li>
+<li><a href="https://gitlab.com/clean-and-itasks/itasks-sdk">iTasks</a> - integration of the above ABC interpreter with browser applications.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-co-a-co-sup-top-contents-sup-"><a name="co"></a>Co <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>A programming language similar to Go and TypeScript.</p>
+<ul>
+<li><a href="https://github.com/rsms/co">Co</a> - main repository</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-cobol-a-cobol-sup-top-contents-sup-"><a name="cobol"></a>COBOL <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>COBOL is a compiled English-like programming language designed for business use.
+It is imperative, procedural, and object-oriented. COBOL is primarily used in business, finance, and administrative systems.</p>
+<ul>
+<li><a href="https://github.com/cloudflare/cobaul">Cobaul</a> - toolchain used to <a href="https://blog.cloudflare.com/cloudflare-workers-now-support-cobol/">support COBOL in CloudFlare workers</a></li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-crystal-a-crystal-sup-top-contents-sup-"><a name="crystal"></a>Crystal <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Crystal is a programming language with the following goals:</p>
+<ul>
+<li>Have a syntax similar to Ruby (but compatibility with it is not a goal)</li>
+<li>Statically type-checked but without having to specify the type of variables or method arguments.</li>
+<li>Be able to call C code by writing bindings to it in Crystal.</li>
+<li>Have compile-time evaluation and generation of code, to avoid boilerplate code.</li>
+<li>Compile to efficient native code.</li>
+</ul>
+</blockquote>
+<ul>
+<li><a href="https://github.com/crystal-lang/crystal">Crystal</a> - main repository</li>
+<li><a href="https://github.com/crystal-lang/crystal/pull/10870">POC PR</a> - PR adding initial support for WebAssembly</li>
+</ul>
+<hr>
+<h3 id="-a-name-d-a-d-sup-top-contents-sup-"><a name="d"></a>D <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>D is a general-purpose programming language with static typing, systems-level access, and C-like syntax.</p>
+<ul>
+<li><a href="https://github.com/ldc-developers/ldc">LDC</a> - LLVM-based D compiler, which can generate WASM since version 1.11.0.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-eel-a-eel-sup-top-contents-sup-"><a name="eel"></a>Eel <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Eel is a small language used for, among other things, writing visualizer &quot;presets&quot; for <a href="http://www.geisswerks.com/milkdrop/">Milkdrop</a>, the music visualization program which came with <a href="https://en.wikipedia.org/wiki/Winamp">Winamp</a>.</p>
+<ul>
+<li><a href="https://github.com/captbaritone/eel-wasm">eel-wasm</a> - Compiles Milkdrop flavored Eel to Wasm in the browser. Intended to become a component of <a href="https://github.com/jberg/butterchurn">Butterchurn</a>, a WebGL implementation of the Milkdrop Visualizer.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-elixir-a-elixir-sup-top-contents-sup-"><a name="elixir"></a>Elixir <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Elixir is a dynamic, functional language designed for building scalable and maintainable applications.
+Elixir builds on top of Erlang and shares the same abstractions for building distributed, fault-tolerant applications.</p>
+<ul>
+<li><a href="https://github.com/lumen/lumen">Lumen</a> - An alternative BEAM implementation (with AOT compiler) designed for WebAssembly.</li>
+<li>~<a href="https://github.com/jamen/elixir-wasm">ElixirWasm</a> - an elixir compiler for wasm. [Unmaintained]~</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-fsharp-a-f-sup-top-contents-sup-"><a name="fsharp"></a>F# <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>F# is a mature, open source, cross-platform, functional-first programming language. It empowers users and organizations to tackle complex computing problems with simple, maintainable and robust code.
+WebAssembly support is achieved through <a href="https://fsbolero.io/">Bolero</a>, a set of free and open-source libraries and tools built on top of <a href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor">Blazor</a>.
+F# was mainly conceived by Don Syme of Microsoft Research but it&#39;s now maintained by the <a href="http://foundation.fsharp.org/">F# Foundation</a> and its community.</p>
+<ul>
+<li>See <a href="#dotnet">.Net</a></li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-faust-a-faust-sup-top-contents-sup-"><a name="faust"></a>Faust <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Faust (Functional Audio Stream) is a functional programming language specifically designed for real-time signal processing and synthesis. A distinctive characteristic of Faust is to be fully compiled.</p>
+<ul>
+<li><a href="https://github.com/grame-cncm/faust">Faust</a> - main repository.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-forest-a-forest-sup-top-contents-sup-"><a name="forest"></a>Forest <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Forest is a functional programming language that compiles to WebAssembly. The main repo contains the compiler and core syntaxes, currently implemented in Haskell.</p>
+<ul>
+<li><a href="https://github.com/forest-lang/core">ForestLang</a> - main repository.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-forth-a-forth-sup-top-contents-sup-"><a name="forth"></a>Forth <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Forth is an interactive, extensible, imperative, untyped, stack-based programming language.</p>
+<ul>
+<li><a href="https://github.com/stefano/wasm-forth">WASM Forth</a> - Forth implementation for wasm.</li>
+<li><a href="https://github.com/remko/waforth">WAForth</a> - Bootstrapping Dynamic Forth Interpreter/Compiler for &amp; in WebAssembly.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-go-a-go-sup-top-contents-sup-"><a name="go"></a>Go <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Go is a statically typed compiled language in the tradition of C, with memory safety, garbage collection, structural typing, and CSP-style concurrent programming features added.</p>
+<ul>
+<li><a href="https://github.com/golang/go">Go</a> - main repository.</li>
+<li><a href="https://github.com/aykevl/tinygo">TinyGo</a> - a subset of Go targeted to embedded devices and WebAssembly.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-grain-a-grain-sup-top-contents-sup-"><a name="grain"></a>Grain <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Grain is a strongly-typed functional programming language built for the modern web.</p>
+<ul>
+<li><a href="https://github.com/grain-lang/grain">Grain</a> - main repository.</li>
+<li><a href="https://grain-lang.org/">GrainWeb</a> - Web page.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-haskell-a-haskell-sup-top-contents-sup-"><a name="haskell"></a>Haskell <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Haskell is a standardized, general-purpose purely functional programming language, with non-strict semantics and strong static typing. It is named after logician Haskell Curry.[1] The latest standard of Haskell is Haskell 2010. As of May 2016, a group is working on the next version, Haskell 2020.</p>
+<ul>
+<li><a href="https://github.com/tweag/asterius">Asterius</a> - a Haskell to WebAssembly compiler</li>
+<li><a href="https://github.com/dfinity/dhc">DHC</a> - a Haskell compiler that accepts only a tiny subset of the language and produces WebAssembly binaries.</li>
+<li>~<a href="https://github.com/haskell-wasm/wasm">HaskellWasm</a> - a Haskell compiler infrastructure for generating WebAssembly. [Unmaintained]~</li>
+<li><a href="https://github.com/SPY/haskell-wasm">haskell-wasm</a> - Haskell WebAssembly Toolkit. It includes Language helpers and a fully spec-compatible WASM interpreter.</li>
+<li><a href="https://github.com/WebGHC/wasm-cross">wasm-cross</a> - A toolchain for cross compiling C and Haskell to WebAssembly, using the WebGHC and LLVM.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-idris-a-idris-sup-top-contents-sup-"><a name="idris"></a>Idris <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Idris is a general purpose pure functional programming language with dependent types. Dependent types allow types to be predicated on values, meaning that some aspects of a program’s behaviour can be specified precisely in the type. It is compiled, with eager evaluation. Its features are influenced by Haskell and ML.</p>
+<ul>
+<li>~<a href="https://github.com/SPY/idris-codegen-wasm">Idris-codegen-WASM</a> - WASM codegen repository.~ <code>Unmaintained</code></li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-java-a-java-sup-top-contents-sup-"><a name="java"></a>Java <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Java is a general-purpose computer programming language that is concurrent, class-based, object-oriented, and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers &quot;write once, run anywhere&quot; (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.
+Java was originally developed by James Gosling at Sun Microsystems and released in 1995 as a core component of Sun Microsystems&#39; Java platform. The language derives much of its syntax from C and C++, but it has fewer low-level facilities than either of them.</p>
+<ul>
+<li><a href="https://github.com/konsoletyper/teavm">TeaVM</a> - an ahead-of-time translating compiler (transpiler) of Java bytecode, that&#39;s capable of emitting JavaScript and WebAssembly.</li>
+<li><a href="https://github.com/i-net-software/JWebAssembly">JWebAssembly</a> - A Java bytecode to WebAssembly compiler. It can generate the WebAssembly binary or text format. It is written in Java itself and can be integrated with other Java build tools.</li>
+<li><a href="https://github.com/mirkosertic/Bytecoder">Bytecoder</a> - A Rich Domain Model for Java Bytecode and Framework to interpret and transpile it to other languages such as JavaScript, OpenCL or WebAssembly.</li>
+<li><a href="https://github.com/leaningtech/cheerpj-meta">CheerpJ</a> - A Java compiler for the web that converts any Java client application into standard HTML5/WebAssembly/JavaScript.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-javascript-a-javascript-sup-top-contents-sup-"><a name="javascript"></a>JavaScript <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>JavaScript is a high-level, interpreted programming language that conforms to the ECMAScript specification. It is a language that is also characterized as dynamic, weakly typed, prototype-based and multi-paradigm.</p>
+<ul>
+<li><a href="https://github.com/svaarala/duktape">Duktape</a> - an embeddable Javascript engine, with a focus on portability and compact footprint that&#39;s capable of being run in the browser via WebAssembly.</li>
+<li><a href="https://github.com/shopify/javy">Javy</a> - a JavaScript to WebAssembly toolchain, capable of generating WASI-compatible modules from JS by embedding the QuickJS engine.</li>
+<li><a href="https://github.com/bytecodealliance/spidermonkey-wasm-rs">SpiderMonkey</a> - experimental Rust bindings and generic builtins for SpiderMonkey for building WASI-compatible modules from JavaScript.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-julia-a-julia-sup-top-contents-sup-"><a name="julia"></a>Julia <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Julia was designed from the beginning for high performance. Julia programs compile to efficient native code for multiple platforms via LLVM.</p>
+<ul>
+<li><a href="https://github.com/Keno/julia-wasm">julia-wasm</a> - Emscripten &amp; LLVM Julia to WASM compiler.</li>
+<li>~<a href="https://github.com/MikeInnes/Charlotte.jl">Charlotte.jl</a> - a Julia to WebAssembly/Javascript compiler~ <code>Unmaintained</code></li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-kotlin-a-kotlin-sup-top-contents-sup-"><a name="kotlin"></a>Kotlin <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Kotlin is a statically-typed programming language that runs on the Java virtual machine and also can be compiled to JavaScript source code or use the LLVM compiler infrastructure. Its primary development is from a team of JetBrains programmers based in Saint Petersburg, Russia. While the syntax is not compatible with Java, Kotlin is designed to interoperate with Java code and is reliant on Java code from the existing Java Class Library, such as the collections framework.</p>
+<ul>
+<li><a href="https://github.com/JetBrains/kotlin-native/">Kotlin/Native</a> - main repository.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-kou-a-kou-sup-top-contents-sup-"><a name="kou"></a>Kou <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>A minimal language compiled into wasm bytecode.</p>
+<ul>
+<li><a href="https://github.com/utatti/kou">Kou</a> - main repository.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-lisp-a-lisp-sup-top-contents-sup-"><a name="lisp"></a>Lisp <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Lisp (historically LISP) is a family of programming languages with a long history and a distinctive, fully parenthesized prefix notation.</p>
+<ul>
+<li><a href="https://github.com/FemtoEmacs/wasCm">Femto Emacs</a> - translates Low Level Lisp into WebAssembly.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-lobster-a-lobster-sup-top-contents-sup-"><a name="lobster"></a>Lobster <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Lobster is a statically typed language with flow-sensitive type inference and specialization, compile time reference counting (lifetime analysis) that looks a bit like Python. It was originally intended specifically for games.
+Lobster has its own Wasm backend that compiles directly to linkable (with LLD) .wasm files.</p>
+<ul>
+<li><a href="http://strlen.com/lobster/">Lobster home</a>.</li>
+<li><a href="http://aardappel.github.io/lobster/README_FIRST.html">Lobster docs</a></li>
+<li><a href="https://github.com/aardappel/lobster">Lobster github</a></li>
+<li><a href="http://aardappel.github.io/lobster/implementation.html">Compile to Wasm</a> - how to compile.</li>
+<li><a href="http://aardappel.github.io/lobster/implementation_wasm.html">Wasm backend details</a> - how it is implemented, useful for other language implementors.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-lua-a-lua-sup-top-contents-sup-"><a name="lua"></a>Lua <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Lua is a lightweight, multi-paradigm programming language designed primarily for embedded systems and clients.[2] Lua is cross-platform, since the interpreter is written in ANSI C, and has a relatively simple C API.
+Lua was originally designed in 1993 as a language for extending software applications to meet the increasing demand for customization at the time.</p>
+<ul>
+<li><a href="https://github.com/vvanders/wasm_lua">WasmLua</a> - a Lua VM running in the browser.</li>
+<li><a href="https://github.com/serprex/luwa">Luwa</a> - a wasm-to-Lua JIT compiler.</li>
+<li><a href="https://github.com/ceifa/wasmoon">Wasmoon</a> - a high level Lua VM with JS bindings.</li>
+<li><a href="https://github.com/SwadicalRag/wasm2lua">Wasm2Lua</a> - can compile WebAssembly modules to pure Lua (or with FFI LuaJIT for extra speed).</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-lys-a-lys-sup-top-contents-sup-"><a name="lys"></a>Lys <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Lys is a typed functional language that compiles directly to WebAssembly.</p>
+</blockquote>
+<ul>
+<li><a href="https://github.com/lys-lang/lys">Lys</a> - main repository.</li>
+</ul>
+<hr>
+<h3 id="-a-name-never-a-never-sup-top-contents-sup-"><a name="never"></a>Never <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Never is a simple functional programming language. Technically it may be classified as syntactically scoped, strongly typed, call by value, functional programming language.</p>
+<ul>
+<li><a href="https://github.com/never-lang/never">Never</a> - project repository</li>
+<li><a href="https://never-lang.readthedocs.io/en/latest/never-web/">Never on the Web</a> - Never language demo</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-nim-a-nim-sup-top-contents-sup-"><a name="nim"></a>Nim <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>A fringe language with some beautiful design patterns.</p>
+<ul>
+<li><a href="https://github.com/arnetheduck/nlvm">nlvm</a> - LLVM-based compiler for Nim with a WebAssembly target supported out of the box</li>
+<li><a href="https://github.com/stisa/nwasm">nwasm</a> - a webassembly backend for nim.</li>
+<li><a href="https://github.com/Feneric/nim-wasm-helpers">Nim wasm helpers</a> - a helper to set up a VM configured to build WebAssembly code using Nim.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-ocaml-a-ocaml-sup-top-contents-sup-"><a name="ocaml"></a>Ocaml <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>OCaml, originally named Objective Caml, is the main implementation of the programming language Caml, created by Xavier Leroy, Jérôme Vouillon, Damien Doligez, Didier Rémy, Ascánder Suárez and others in 1996. A member of the ML language family, OCaml extends the core Caml language with object-oriented programming constructs.</p>
+<ul>
+<li><a href="https://github.com/SanderSpies/ocaml/tree/wasm/wasmcomp">Ocaml</a> - a fork of main repo contianing work on OCaml to wasm compilation.</li>
+<li>~<a href="https://github.com/sebmarkbage/ocamlrun-wasm">OcamlRun</a> - a build script for compiling OCaml bytecode interpreter to wasm using emscripten [Unmaintained]~</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-pascal-a-pascal-sup-top-contents-sup-"><a name="pascal"></a>Pascal <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Pascal is a general purpose imperative, procedural and object-oriented
+static typing programming language. The Free Pascal compiler targets many
+processor architectures, including wasm32; operating systems, including
+WASI; and embedded platforms.</p>
+<ul>
+<li><a href="https://wiki.freepascal.org/WebAssembly">Free Pascal</a> - Free Pascal compilation target and Pascal-to-Javascript runtime.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-perl-a-perl-sup-top-contents-sup-"><a name="perl"></a>Perl <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Perl is a general-purpose programming language originally developed for text manipulation and now used for a wide range of tasks including system administration, web development, network programming, GUI development, and more.</p>
+<ul>
+<li><a href="https://github.com/haukex/webperl">WebPerl</a> - Perl 5 in the browser.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-php-a-php-sup-top-contents-sup-"><a name="php"></a>PHP <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>PHP is a general-purpose scripting language that is especially suited to server-side web development, in which case PHP generally runs on a web server. Any PHP code in a requested file is executed by the PHP runtime, usually to create dynamic web page content or dynamic images used on websites or elsewhere.</p>
+<ul>
+<li><a href="https://github.com/oraoto/pib">PIB</a> - a PHP runtime in the browser.</li>
+<li><a href="https://github.com/soyuka/php-wasm">PHP WASM</a> - maintained fork of PIB with PHP 8 support based on the work of <a href="https://github.com/seanmorris/php-wasm">seanmorris</a>.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-plorth-a-plorth-sup-top-contents-sup-"><a name="plorth"></a>Plorth <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Plorth is stack based, concatenative, strongly typed functional scripting language which is easy to embed to applications written in C++. It&#39;s inspired by Forth and Factor programming languages.</p>
+<ul>
+<li><a href="https://github.com/RauliL/plorth-webassembly">Plorth</a> - main repository.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-poetry-a-poetry-sup-top-contents-sup-"><a name="poetry"></a>Poetry <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Poetry is a poetically dynamic and simple programming language that compiles to WebAssembly. It has a minimalisting syntax akin to CoffeeScript and gives you full control over wasm imports and exports.</p>
+<ul>
+<li><a href="https://github.com/FantasyInternet/poetry">Poetry</a> - main repository.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-python-a-python-sup-top-contents-sup-"><a name="python"></a>Python <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Python is an open source interpreted high-level programming language for general-purpose programming. Created by Guido van Rossum and first released in 1991, Python has a design philosophy that emphasizes code readability, notably using significant whitespace. It provides constructs that enable clear programming on both small and large scales.</p>
+<ul>
+<li><a href="https://github.com/iodide-project/pyodide">Pyodide</a> - a port of Python to WebAssembly that includes the core packages of the scientific Python stack (Numpy, Pandas, matplotlib).  Objects transparently convert and share between Python and Javascript.</li>
+<li><a href="https://github.com/micropython/micropython/tree/master/ports/javascript">MicroPython</a> - a lean and efficient Python implementation for microcontrollers and constrained systems.</li>
+<li><a href="https://github.com/RustPython/RustPython">RustPython</a> - A Python 3 interpreter written in Rust. Check the demo <a href="https://rustpython.github.io/demo/">here</a></li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-prolog-a-prolog-sup-top-contents-sup-"><a name="prolog"></a>Prolog <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Prolog is a general-purpose logic programming language associated with artificial intelligence and computational linguistics. Prolog has its roots in first-order logic, a formal logic, and unlike many other programming languages, Prolog is intended primarily as a declarative programming language: the program logic is expressed in terms of relations, represented as facts and rules. A computation is initiated by running a query over these relations.</p>
+<ul>
+<li><a href="https://github.com/SWI-Prolog/swipl-wasm">SWI-Prolog port to WebAssembly</a> - a port of SWI-Prolog to WebAssembly. SWI-Prolog is a free implementation of the programming language Prolog commonly used for teaching and semantic web applications.</li>
+<li><a href="https://github.com/ciao-lang/ciao">Ciao Prolog</a> - includes a WebAssembly compilation target based on Emscripten. Ciao Prolog is a modern Prolog implementation designed to be portable, extensible and modular. Check the playground <a href="https://ciao-lang.org/playground">here</a>.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-ruby-a-ruby-sup-top-contents-sup-"><a name="ruby"></a>Ruby <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Ruby is an open source interpreted high-level programming language for general-purpose programming. Created by Matz. Ruby has a design philosophy that emphasizes code readability, notably using as few sigils (special chars<code>:.{}%[]&amp;=&gt;;</code>) as possible.</p>
+<ul>
+<li><a href="https://github.com/pannous/wruby">Wruby</a> Web ruby - a port of minimal ruby (mruby).</li>
+<li><a href="https://github.com/jasoncharnes/run.rb">run.rb</a> run.rb - allows you to run Ruby code in the browser</li>
+<li><a href="https://github.com/artichoke/artichoke/blob/f8e9881403a50c3ba7e2b1ffc16f205c0b5e0255/VISION.md#design-and-goals">Artichoke</a> - a Ruby implementation written in Rust and Ruby. You can try it out here: <a href="https://artichoke.run">https://artichoke.run</a></li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-rust-a-rust-sup-top-contents-sup-"><a name="rust"></a>Rust <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Rust is a systems programming language sponsored by Mozilla Research, which describes it as a &quot;safe, concurrent, practical language,&quot;supporting functional and imperative-procedural paradigms. Rust is syntactically similar to C++, but its designers intend it to provide better memory safety while maintaining performance.</p>
+<ul>
+<li><a href="https://www.hellorust.com/setup/wasm-target/">Rust <code>wasm32-unknown-unknown</code> target</a> - Rust compiler backend for WebAssembly (without the need for Emscripten).</li>
+<li><a href="https://github.com/lord/wargo">Wargo</a> - a simple npm package that makes compiling Rust to WebAssembly easy on macOS or Linux.</li>
+<li><a href="https://github.com/ianjsikes/rust-wasm-loader">RustWasmLoader</a> - A simple Webpack loader that shells out to cargo to build a Rust project targeting WebAssembly.</li>
+<li><a href="https://github.com/koute/cargo-web">CargoWeb</a> - This cargo subcommand aims to make it easy and convenient to build, develop and deploy client-side Web applications written in Rust.</li>
+<li><a href="https://github.com/rustwasm/wasm-bindgen">Wasm-Bindgen</a> - A library and a CLI for Rust that facilitate high-level interactions between wasm modules and JavaScript.</li>
+<li><a href="https://github.com/alexkehayias/woz">Woz</a> - Woz is a WebAssembly progressive web app (PWA) toolchain for building and deploying performant mobile apps with Rust. Distributing your app is as simple as sharing a hyperlink.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-scheme-a-scheme-sup-top-contents-sup-"><a name="scheme"></a>Scheme <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Scheme is a programming language that supports multiple paradigms, including functional programming and imperative programming, and is one of the two main dialects of Lisp. Unlike Common Lisp, the other main dialect, Scheme follows a minimalist design philosophy specifying a small standard core with powerful tools for language extension..</p>
+<ul>
+<li><a href="https://github.com/schism-lang/schism">Schism</a> - Schism is an experimental self-hosting compiler from a subset of R6RS Scheme to WebAssembly. Development so far has focused on features necessary for self-hosting. The compiler itself is written in, and compiles, a very small subset of Scheme.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-scopes-a-scopes-sup-top-contents-sup-"><a name="scopes"></a>Scopes <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Scopes is a general purpose programming language and compiler infrastructure specifically suited for short turnaround prototyping and development of high performance applications in need of multi-stage compilation at runtime.</p>
+<ul>
+<li><a href="https://hg.sr.ht/~duangle/scopes">Scopes</a> - main repository</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-speedyjs-a-speedy-js-sup-top-contents-sup-"><a name="speedyjs"></a>Speedy.js <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Speedy.js is a compiler for a well considered, performance pitfalls free subset of JavaScript targeting WebAssembly. Because WebAssembly is statically-typed, the project uses TypeScript as type-checker and to resolve the types of the program symbols.</p>
+<ul>
+<li>~<a href="https://github.com/MichaReiser/speedy.js">Speedy.js</a> - main repository.~ <code>Unmaintained</code></li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-swift-a-swift-sup-top-contents-sup-"><a name="swift"></a>Swift <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Swift is a general-purpose, multi-paradigm, compiled programming language developed by Apple Inc. for iOS, macOS, watchOS, tvOS, Linux, and z/OS.</p>
+<ul>
+<li><a href="https://github.com/swiftwasm">SwiftWasm</a> - GitHub organization.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-turboscript-a-turboscript-sup-top-contents-sup-"><a name="turboscript"></a>TurboScript <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>TurboScript is an experimental programming language for parallel programming for web which compiles to JavaScript (asm.js) and WebAssembly (targeting post-MVP). The syntax is similar to TypeScript and the compiler is open source and written in TypeScript. TurboScript has zero dependencies.</p>
+<ul>
+<li><a href="https://github.com/01alchemist/TurboScript">TurboScript</a> - main repository.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-typescript-a-typescript-sup-top-contents-sup-"><a name="typescript"></a>TypeScript <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>TypeScript is an open-source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript, and adds optional static typing to the language.</p>
+<ul>
+<li>See <a href="#assemblyscript">AssemblyScript</a></li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-wa-a-wa-sup-top-contents-sup-"><a name="wa"></a>Wa <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Wa is a general-purpose programming language designed for developing robustness and maintainability WebAssembly software. Instead of requiring complex toolchains to set up, you can simply go install it - or run it in a browser.
+凹语言™（凹读音“Wa”）是 针对 WASM 平台设计的的通用编程语言，支持 Linux、macOS 和 Windows 等主流操作系统和 Chrome 等浏览器环境，同时也支持作为独立Shell脚本和被嵌入脚本模式执行。</p>
+<ul>
+<li><a href="https://github.com/wa-lang/wa">Wa/凹语言</a> - main repository.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-wah-a-wah-sup-top-contents-sup-"><a name="wah"></a>Wah <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Wah is a slightly higher level language that is a superset of WebAssembly. It aims to make WebAssembly&#39;s text format slightly more friendly to humans, without introducing new syntax or datatypes.</p>
+<ul>
+<li>~<a href="https://github.com/tmcw/wah">Wah</a> - main repository.~ <code>Unmaintained</code></li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-walt-a-walt-sup-top-contents-sup-"><a name="walt"></a>WAlt <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>WAlt is an alternative syntax for WebAssembly text format. It&#39;s an experiment for using JavaScript syntax to write to as &#39;close to the metal&#39; as possible. It&#39;s JavaScript with rules. .walt files compile directly to WebAssembly binary format.</p>
+<ul>
+<li>~<a href="https://github.com/ballercat/walt">Walt</a> - main repository.~ <code>Unmaintained</code></li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-wam-a-wam-sup-top-contents-sup-"><a name="wam"></a>Wam <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>WebAssembly Macro language: Wam syntax is a near superset of wast syntax that is more convenient for human developers to write directly.</p>
+<ul>
+<li>~<a href="https://github.com/kanaka/wam">Wam</a> - main repository.~ <code>Unmaintained</code></li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-wase-a-wase-sup-top-contents-sup-"><a name="wase"></a>Wase <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>WASE: WebAssembly made easy. Wase is a language, which tries to make WASM easy to write. The language maps closely to WebAssembly, and compiles directly to Wasm bytecode. Has strong typing with type inference.</p>
+<ul>
+<li><a href="https://github.com/area9innovation/wase">Wase</a> - main repository.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-webassembly-a-webassembly-sup-top-contents-sup-"><a name="webassembly"></a>WebAssembly <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Yes, WebAssembly. <code>Wasm3</code> is the fastest WebAssembly interpreter, that enables WebAssembly self-hosting.</p>
+<ul>
+<li><a href="https://github.com/wasm3/wasm3">Wasm3</a> - main repository.</li>
+<li><a href="https://wapm.io/package/vshymanskyy/wasm3">Wasm3 on WAPM</a> - WAPM package.</li>
+</ul>
+<hr>
+</blockquote>
+<h3 id="-a-name-wracket-a-wracket-sup-top-contents-sup-"><a name="wracket"></a>Wracket <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>A lisp-like language that compiles to WebAssembly, written in racket</p>
+<ul>
+<li>~<a href="https://github.com/sschauss/wracket">Wracket</a> - main repository.~ <code>Unmaintained</code></li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-xcc-a-xcc-sup-top-contents-sup-"><a name="xcc"></a>xcc <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Toy C compiler for x86-64 and wasm</p>
+<ul>
+<li><a href="https://github.com/tyfkda/xcc">xcc</a> - main repository.</li>
+<li><a href="https://tyfkda.github.io/xcc/">Online demo</a>.</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="-a-name-zig-a-zig-sup-top-contents-sup-"><a name="zig"></a>Zig <sup><a href="#contents">top⇈</a></sup></h3>
+<blockquote>
+<p>Zig is a general-purpose programming language designed for robustness, optimality, and maintainability.</p>
+<ul>
+<li><a href="https://ziglang.org/documentation/master/#WebAssembly">Zig WebAssembly</a> - documentation on WebAssembly</li>
+</ul>
+</blockquote>
+<hr>
+<p>Please read the <a href="CONTRIBUTING.md">contribution guidelines</a> if you want to contribute.</p>
+<hr>
+<h3 id="license">License</h3>
+<p><a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="CC0"></a></p>
+<p>To the extent possible under law, <a href="https://github.com/appcypher">Steve Akinyemi</a> has waived all copyright and related or neighboring rights to this work.</p>
